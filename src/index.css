@@ -42,5 +42,15 @@
   background-size: cover;
   background-color: #010101;
 }
+
+.metallic-border {
+  border-image: linear-gradient(
+      90deg,
+      #55555550 0%,
+      #ffffff50 49%,
+      #55555550 100%
+    )
+    1;
+}
 @tailwind components;
 @tailwind utilities;

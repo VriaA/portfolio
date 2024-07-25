@@ -6,6 +6,8 @@ export default {
     extend: {
       colors: {
         "off-white": "#E8E8E8",
+        "dark-gray": "#333333",
+        black: "#010101",
       },
       fontFamily: {
         "brown-sugar": ["Brown sugar", "cursive"],
@@ -21,11 +23,13 @@ export default {
         ],
       },
       boxShadow: {
-        "nav-shadow": "0 4px 4px 2px #22222210",
+        container: "0 4px 4px 2px #22222210",
       },
       backgroundImage: {
         "metallic-gradient":
           "linear-gradient(90deg, #55555550 0%, #FFFFFF50 49%, #55555550 100%)",
+        "metallic-text": "linear-gradient(90deg, #E8E8E8 0%, #666666 100%)",
+        "cta-primary": "linear-gradient(90deg, #AEB2FA 0%, #BBB999 100%)",
       },
     },
   },

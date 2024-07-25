@@ -13,12 +13,12 @@ export default function Header(): JSX.Element {
         setIsMobileNavMenuOpen(prevValue => !prevValue)
     }
 
-    return <header className="fixed flex justify-between items-center w-full px-5 md:px-20 mt-5">
+    return <header className="fixed z-10 flex justify-between items-center w-full px-5 md:px-20 mt-5">
         <div className="w-fit h-[86px] bg-[#555555] rounded-full overflow-hidden">
             <img className="w-[86px] h-fit object-top" src={victoria} alt="Oyelola victoria" />
         </div>
 
-        {canShowNav && <nav className="absolute right-5 top-[84%] lg:static bg-[#55555550] backdrop-blur-sm rounded-lg shadow-nav-shadow border border-white/30">
+        {canShowNav && <nav className="absolute right-5 top-[84%] lg:static bg-[#55555520] backdrop-blur-[2px] rounded-lg shadow-container border border-white/30">
             <ul className="flex flex-col md:flex-row gap-4 md:gap-8 p-4 md:px-8 md:py-5">
                 <li><a className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Projects</a></li>
                 <li><a className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Experience</a></li>
