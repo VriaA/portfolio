@@ -11,10 +11,36 @@
   font-display: swap;
   font-family: "Satoshi";
   font-style: normal;
-  src: url("/Satoshi-Variable.eot") format("embedded-opentype"),
-    url("/Satoshi-Variable.woff") format("woff"),
-    url("/Satoshi-Variable.woff2") format("woff2"),
-    url("/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 700;
+  src: url("/Satoshi-Bold.otf") format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/Satoshi-Medium.otf") format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/Satoshi-Regular.otf") format("opentype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/Satoshi-Light.otf") format("opentype");
+}
+
+.site-bg {
+  background-image: url(./assets/grid.svg), url(./assets/noise.svg);
+  background-position: left top;
+  background-size: cover;
+  background-color: #010101;
 }
 @tailwind components;
 @tailwind utilities;
