@@ -1,0 +1,20 @@
+@tailwind base;
+@font-face {
+  font-display: swap;
+  font-family: "Brown Sugar";
+  font-style: normal;
+  src: url("/brown-sugar.otf") format("opentype"),
+    url("/brown-sugar.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Satoshi";
+  font-style: normal;
+  src: url("/Satoshi-Variable.eot") format("embedded-opentype"),
+    url("/Satoshi-Variable.woff") format("woff"),
+    url("/Satoshi-Variable.woff2") format("woff2"),
+    url("/Satoshi-Variable.ttf") format("truetype");
+}
+@tailwind components;
+@tailwind utilities;
