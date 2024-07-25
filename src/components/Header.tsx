@@ -13,7 +13,7 @@ export default function Header(): JSX.Element {
         setIsMobileNavMenuOpen(prevValue => !prevValue)
     }
 
-    return <header className="fixed z-10 flex justify-between items-center w-full px-5 md:px-20 mt-5">
+    return <header className="fixed left-0 z-10 flex justify-between items-center w-full px-5 md:px-20 mt-5">
         <div className="w-fit h-[86px] bg-[#555555] rounded-full overflow-hidden">
             <img className="w-[86px] h-fit object-top" src={victoria} alt="Oyelola victoria" />
         </div>

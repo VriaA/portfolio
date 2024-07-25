@@ -52,5 +52,10 @@
     )
     1;
 }
+
+.skill > svg  {
+  width: fit;
+  height: 32px;
+}
 @tailwind components;
 @tailwind utilities;

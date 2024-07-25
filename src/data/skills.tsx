@@ -45,7 +45,7 @@ export default [
     logo: logos.firebase
   },
   {
-    skill: "GSAP",
+    skill: "",
     logo: logos.gsap
   },
   {
