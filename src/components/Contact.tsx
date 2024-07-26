@@ -6,19 +6,20 @@ export default function Contact(): JSX.Element {
             <SectionHeader text="Contact" />
             <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-transparent">Get in touch</h3>
 
-            <form className="w-full max-w-[600px] mt-10 bg-[#33333330] backdrop-blur px-5 py-10 md:p-10 rounded-2xl">
+            <form className="w-full max-w-[600px] mt-10 bg-[#33333330] backdrop-blur px-5 py-10 md:p-10 rounded-2xl"  name="contact" method='post' data-netlify='true'>
+            <input type="hidden" name='form-name' value='contact'/>
                 <fieldset className="grid grid-cols-2 grid-rows-form md:grid-rows-form-md gap-5">
                     <label className="flex flex-col col-start-1 col-end-3 md:col-end-2 row-start-1 row-end-2 gap-3 font-satoshi font-medium !leading-none text-base lg:text-lg tracking-normal bg-transparent text-off-white">Firstname:
-                            <input className="font-normal bg-transparent placeholder:text-[#999999] p-3 md:px-5 rounded-2xl  border border-white/30" type="text" placeholder="Your first name" />
+                            <input name="Firstname" className="font-normal bg-transparent placeholder:text-[#999999] p-3 md:px-5 rounded-2xl  border border-white/30" type="text" placeholder="Your first name" />
                     </label>
                     <label className="flex flex-col col-start-1 col-end-3 md:col-start-2 row-start-2 row-end-3 md:row-start-1 md:row-end-2 gap-3 font-satoshi font-medium !leading-none text-base lg:text-lg tracking-normal bg-transparent text-off-white">Lastname:
-                            <input className="font-normal bg-transparent placeholder:text-[#999999] p-3 md:px-5 rounded-2xl  border border-white/30" type="text" placeholder="Your last name" />
+                            <input name="Lastname" className="font-normal bg-transparent placeholder:text-[#999999] p-3 md:px-5 rounded-2xl  border border-white/30" type="text" placeholder="Your last name" />
                     </label>
                     <label className="flex flex-col col-start-1 col-end-3 row-start-3 row-end-4 md:row-start-2 md:row-end-3 gap-3 font-satoshi font-medium !leading-none text-base lg:text-lg tracking-normal bg-transparent text-off-white">Email:
-                            <input className="font-normal bg-transparent placeholder:text-[#999999] p-3 md:px-5 rounded-2xl  border border-white/30" type="email" placeholder="your@email.com" />
+                            <input name="email" className="font-normal bg-transparent placeholder:text-[#999999] p-3 md:px-5 rounded-2xl  border border-white/30" type="email" placeholder="your@email.com" />
                     </label>
                     <label className="flex flex-col col-start-1 col-end-3 row-start-4 row-end-5 md:row-start-3 md:row-end-4 gap-3 font-satoshi font-medium !leading-none text-base lg:text-lg tracking-normal bg-transparent text-off-white"> Message:
-                        <textarea className="h-[200px] resize-none bg-transparent p-3 md:px-5 rounded-2xl placeholder:text-[#999999] border border-white/30" placeholder="Your message..."></textarea>
+                        <textarea name="Message" className="h-[200px] resize-none bg-transparent p-3 md:px-5 rounded-2xl placeholder:text-[#999999] border border-white/30" placeholder="Your message..."></textarea>
                     </label>
                 </fieldset>
                 <button className="flex justify-center items-center gap-3 w-full text-lg lg:text-xl mt-5 px-5 py-2 md:py-4 rounded-2xl font-satoshi font-bold bg-cta-primary">
