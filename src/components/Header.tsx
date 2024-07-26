@@ -35,7 +35,7 @@ export default function Header(): JSX.Element {
                 </ul>
             </nav>
 
-            <button type="button" className="flex flex-col gap-[5px] lg:hidden" onClick={toggleMobileNavMenuVisibility}>
+            <button type="button" className="flex flex-col gap-[5px] lg:hidden" onClick={toggleMobileNavMenuVisibility} aria-label="Navigation menu button">
                 <span className="w-5 h-[3px] bg-off-white rounded"></span>
                 <span className="w-5 h-[3px] bg-off-white rounded"></span>
                 <span className="w-5 h-[3px] bg-off-white rounded"></span>
