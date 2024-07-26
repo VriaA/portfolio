@@ -1,5 +1,5 @@
 import { useState } from "react"
-import victoria from "@/assets/victoria.png"
+import victoria from "@/assets/victoria.webp"
 import logos from "@/data/logos"
 import { useViewport } from "@/hooks/useviewport"
 
