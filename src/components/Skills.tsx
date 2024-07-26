@@ -10,7 +10,7 @@ export default function Skills(): JSX.Element{
         <section className="relative z-[2] bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">    
             <div className="flex flex-col items-center justify-center bg-black rounded-2xl py-10 md:py-20 px-0 ">
 
-                <SectionHeader text='skills' />
+                <SectionHeader text='Skills' />
                 <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">My Expertise</h3>
                     <div className="flex justify-center mt-10 flex-wrap max-w-[335px] md:max-w-[1019px]">
                         {skills.map((skill, i)=> {
