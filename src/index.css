@@ -8,32 +8,13 @@
 }
 
 @font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('../fonts/Satoshi-Variable.woff') format('woff'),
+       url('../fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
   font-display: swap;
-  font-family: "Satoshi";
   font-style: normal;
-  font-weight: 700;
-  src: url("/Satoshi-Bold.otf") format("opentype");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/Satoshi-Medium.otf") format("opentype");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/Satoshi-Regular.otf") format("opentype");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/Satoshi-Light.otf") format("opentype");
 }
 
 .site-bg {
