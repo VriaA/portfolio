@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Skills from "./components/Skills"
 import AppContextProvider from "./contexts/AppContext"
 import Projects from "./components/Projects"
+import Experience from "./components/Experience"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Hero />
           <Skills />
           <Projects />
+          <Experience />
         </main>
       </AppContextProvider>
     </div>
