@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader"
 
 export default function Contact(): JSX.Element {
     return (
-        <section className="relative z-[2] flex flex-col items-center py-20">
+        <section className="relative z-[2] flex flex-col items-center">
             <SectionHeader text="Contact" />
             <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-transparent">Get in touch</h3>
 

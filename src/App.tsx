@@ -14,7 +14,7 @@ function App() {
       <div className="absolute inset-0 mx-auto z-[1] left-0 top-0 min-w-[1440px] h-full site-bg"></div>
       <AppContextProvider>
         <Header />
-        <main>
+        <main className="flex flex-col gap-20">
           <Hero />
           <Skills />
           <Projects />
