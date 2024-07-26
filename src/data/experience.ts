@@ -12,7 +12,7 @@ export default [
     institution: "Freelance",
     startDate: "May 2024",
     endDate: "Present",
-    description: `Designing and developing custom websites and landing pages for small businesses, non-profits, and start-ups. <br> Utilizing modern web technologies and implementing basic SEO best practices.`,
+    description: `Designing and developing custom websites and landing pages for small businesses, non-profits, and start-ups. \n Utilizing modern web technologies and implementing basic SEO best practices.`,
   },
   {
     role: "Front-end Developer",
