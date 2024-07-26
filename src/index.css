@@ -57,5 +57,11 @@
   width: fit;
   height: 32px;
 }
+
+.project-stack > svg {
+  width: fit;
+  height: 20px;
+}
+
 @tailwind components;
 @tailwind utilities;

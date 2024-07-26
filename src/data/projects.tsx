@@ -17,7 +17,7 @@ export default [
       { name: "TypeScript", logo: logos.typescript },
       { name: "React", logo: logos.react },
       { name: "React Router", logo: logos.reactRouter },
-      { name: "GSAP", logo: logos.gsap },
+      { name: "", logo: logos.gsap },
       { name: "Figma", logo: logos.figma },
     ],
     imageSrc: platinumred,
@@ -62,7 +62,7 @@ export default [
       { name: "React Router", logo: logos.reactRouter },
       { name: "TMDB API", logo: null },
       { name: "Firebase", logo: logos.firebase },
-      { name: "GSAP", logo: logos.gsap },
+      { name: "", logo: logos.gsap },
     ],
     imageSrc: watchlist,
     links: {
@@ -121,7 +121,7 @@ export default [
       { name: "React", logo: logos.react },
       { name: "React Router", logo: logos.reactRouter },
       { name: "shadcn/ui", logo: logos.shadcn },
-      { name: "GSAP", logo: logos.gsap },
+      { name: "", logo: logos.gsap },
     ],
     imageSrc: yfl,
     links: {

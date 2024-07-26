@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Skills from "./components/Skills"
 import AppContextProvider from "./contexts/AppContext"
+import Projects from "./components/Projects"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <main>
           <Hero />
           <Skills />
+          <Projects />
         </main>
       </AppContextProvider>
     </div>
