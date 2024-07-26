@@ -31,6 +31,10 @@ export default {
         "metallic-text": "linear-gradient(90deg, #E8E8E8 0%, #666666 100%)",
         "cta-primary": "linear-gradient(90deg, #AEB2FA 0%, #BBB999 100%)",
       },
+      gridTemplateRows: {
+        form: "repeat(3, auto) 200px",
+        "form-md": "repeat(2, auto) 200px",
+      }
     },
   },
   plugins: [],
