@@ -4,7 +4,7 @@ import experiences from "@/data/experience"
 
 export default function Experience(): JSX.Element {
     return (
-        <section className="relative z-[2] bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">
+        <section id="experience" className="relative z-[2] bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">
             <div className="flex flex-col items-center justify-center bg-black rounded-2xl py-10 md:py-20 px-0 ">
                 <SectionHeader text='Experience' />
                 <div className="max-w-[900px] mt-[14px] md:mt-10 px-5 md:px-0">
