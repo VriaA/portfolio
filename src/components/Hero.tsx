@@ -12,7 +12,7 @@ export default function Hero(): JSX.Element {
                 <br />I turn ideas into pixel-perfect, accessible, and interactive experiences.</p>
 
             <div className="flex gap-4 md:gap-8 items-center mt-8 md:mt-12 ">
-                <a className="py-2 px-4 md:py-3 md:px-8 font-bold font-satoshi text-base lg:text-xl tracking-[.01em] !leading-none text-black bg-cta-primary rounded-lg">Contact</a>
+                <a href="#contact" className="py-2 px-4 md:py-3 md:px-8 font-bold font-satoshi text-base lg:text-xl tracking-[.01em] !leading-none text-black bg-cta-primary rounded-lg">Contact</a>
                 <a className="bold px-0 pb-[1px] font-satoshi text-base lg:text-xl font-regular tracking-[.01em] !leading-none border-b metallic-border">Resume</a>
             </div>
         </section>
