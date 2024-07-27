@@ -53,7 +53,7 @@ export default function Projects(): JSX.Element {
                                     }
                                     <div>
                                         <h4 className="font-satoshi font-bold text-[28px] lg:text-5xl leading-none -tracking-[.02em]">{name}</h4>
-                                        <p className="mt-3 font-satoshi font-medium text-base lg:text-lg leading-[150%] tracking-[.01em]">{description}</p>
+                                        <p className="bg-metallic-text text-transparent bg-clip-text mt-3 font-satoshi font-medium text-base lg:text-lg leading-[150%] tracking-[.01em]">{description}</p>
 
                                         <div className="flex flex-wrap gap-1 lg:gap-2 w-full mt-5">
                                             {technologiesUsed.map((tech) => {
