@@ -20,8 +20,8 @@ function App() {
           <Projects />
           <Experience />
           <Contact />
-          <Footer />
         </main>
+        <Footer />
       </AppContextProvider>
     </div>
   )
