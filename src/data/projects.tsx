@@ -1,9 +1,9 @@
-import platinumred from "@/assets/platinumRed.svg"
-import colorinspo from "@/assets/color_inpso.svg"
-import watchlist from "@/assets/watchlist.svg"
-import daragram from "@/assets/daragram.svg"
-import quizzly from "@/assets/quizzly.svg"
-import yfl from "@/assets/yfl.svg"
+import platinumred from "@/assets/platinum.png"
+import colorinspo from "@/assets/colorinspo.png"
+import watchlist from "@/assets/watchlist.png"
+import daragram from "@/assets/daragram.png"
+import quizzly from "@/assets/quizzly.png"
+import yfl from "@/assets/yfl.png"
 import logos from "./logos"
 
 export default [
