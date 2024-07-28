@@ -12,7 +12,7 @@ export default function Experience(): JSX.Element {
                         experiences.map((experience, i) => {
                             const { role, institution, startDate, endDate, description } = experience
                             const isLast = (experiences.length - 1) === i
-                            return <div className={`flex flex-col md:flex-row h-fit gap-6 md:gap-0 py-6 md:py-0 ${!isLast ? 'border-b' : ''} md:border-b-0 metallic-border`}>
+                            return <div key={institution} className={`flex flex-col md:flex-row h-fit gap-6 md:gap-0 py-6 md:py-0 ${!isLast ? 'border-b' : ''} md:border-b-0 metallic-border`}>
                                 <div className="flex flex-col justify-start w-full md:w-1/2 md:p-4 md:py-6 text-left md:text-right md:border-r metallic-border">
                                     <h3 className="text-[32px] lg:text-5xl font-satoshi font-bold !leading-none -tracking-[.02em] text-off-white">{role}</h3>
                                     <p className="mt-5 text-base lg:text-lg font-satoshi font-medium !leading-[110%] tracking-[.01em] bg-metallic-text text-transparent bg-clip-text">{institution}</p>
