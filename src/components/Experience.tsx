@@ -21,7 +21,7 @@ export default function Experience(): JSX.Element {
 
                                 <p className={`w-full md:w-1/2 md:p-4 md:py-6 ${isLast ? 'md:pb-0' : ''} text-base lg:text-lg font-satoshi font-medium !leading-[150%] tracking-[.01em] text-transparent bg-cta-primary bg-clip-text`}>
                                     {description.split('\n').map((line, i) => {
-                                        return <Fragment key={`${description}-${description}-line-${i + 1}`}>
+                                        return <Fragment key={`${institution}-description-line-${i + 1}`}>
                                             {line}
                                             <br />
                                         </Fragment>
