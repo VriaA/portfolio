@@ -15,7 +15,7 @@ export default function Header(): JSX.Element {
 
     return <header className="fixed left-0 z-10 flex justify-between items-center w-full px-5 md:px-20 mt-5">
         <a href="/" className="w-fit h-[72px] bg-off-white rounded-full overflow-hidden">
-            <img className="w-[72px] object-top" src={victoria} alt="Oyelola victoria" />
+            <img className="object-top" src={victoria} width={72} height={89.92} alt="Oyelola victoria" />
         </a>
 
         {canShowNav && <nav className="absolute right-5 md:right-20 top-[84%] lg:static bg-[#33333330] backdrop-blur-[2px] rounded-lg shadow-container border border-white/30">
