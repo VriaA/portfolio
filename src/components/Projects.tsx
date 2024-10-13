@@ -1,19 +1,26 @@
 import SectionHeader from "./SectionHeader"
-import projects from "@/data/projects"
+import { Project } from "@/data/projects"
 import GlowingDot from "./GlowingDot"
+import { useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 
-export default function Projects(): JSX.Element {
+export default function Projects({ projects }: { projects: Project[] }): JSX.Element {
+    const location = useLocation()
+    const isProjectsPage = location.pathname === "/projects"
+
     return (
         <section id="projects" className="relative flex flex-col items-center z-[2] text-white">
             <SectionHeader text="Projects" />
-            <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">
-                Selected works
-            </h3>
+            {
+                !isProjectsPage &&
+                <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">
+                    Selected works
+                </h3>
+            }
 
-            <div className="flex flex-col gap-5 md:gap-10 mt-10 w-full lg:flex-row lg:flex-wrap xl:flex-row ">
-
+            <div className="flex flex-col gap-5 md:gap-14 mt-10 w-full lg:flex-row lg:flex-wrap xl:flex-row ">
                 {projects.map((project, i) => {
-                    const { name, description, technologiesUsed, imageSrc, links, isCompleted } = project
+                    const { name, description, technologiesUsed, imageSrc, links, isCompleted, isOpenSource } = project
                     return (
                         <div key={`project-${i + 1}`} className="flex flex-col items-center lg:w-[calc(50%-20px)] xl:w-full bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">
                             <div className="flex flex-col xl:flex-row gap-10 items-center xl:items-end xl:justify-between w-full h-full bg-black rounded-2xl px-5 md:px-10 py-10">
@@ -22,17 +29,19 @@ export default function Projects(): JSX.Element {
                                 <div className="order-1 xl:order-0 flex flex-col gap-10 xl:gap-20 justify-between h-fit w-full xl:w-[50%]">
                                     {isCompleted ?
                                         <div className="flex items-start gap-4 w-fit">
-                                            <a className="w-fit" href={links.website} target="_blank" aria-label={`Link to ${name} website.`}>
-                                                <svg className="w-7 h-7 xl:w-8 xl:h-8" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fillRule="evenodd" clipRule="evenodd" d="M11.0056 3.25284L12 2.36896C13.3199 1.19855 15.1081 0.54126 16.9725 0.54126C18.8368 0.54126 20.6251 1.19855 21.945 2.36896C23.261 3.54252 24 5.13196 24 6.78897C24 8.44598 23.261 10.0354 21.945 11.209L18.9605 13.8606C17.6342 15.0408 15.8677 15.6921 13.9887 15.6921C12.1097 15.6921 10.3432 15.0408 9.0169 13.8606L8.02254 12.9767L10.0113 11.209L11.0056 12.0928C12.5991 13.5093 15.3783 13.5093 16.9718 12.0928L19.9563 9.44122C20.746 8.73703 21.1894 7.78328 21.1894 6.78897C21.1894 5.79466 20.746 4.8409 19.9563 4.13671C19.1637 3.43535 18.0909 3.04159 16.9725 3.04159C15.8541 3.04159 14.7813 3.43535 13.9887 4.13671L12.9943 5.02059L11.0056 3.25284ZM12.9944 10.3251C11.4009 8.90864 8.62172 8.90864 7.02821 10.3251L4.04373 12.9767C3.25401 13.6809 2.81056 14.6347 2.81056 15.629C2.81056 16.6233 3.25401 17.577 4.04373 18.2812C4.8363 18.9826 5.90914 19.3763 7.02751 19.3763C8.14588 19.3763 9.21872 18.9826 10.0113 18.2812L11.0057 17.3974L12.9944 19.1651L12 20.049C11.3475 20.6299 10.5722 21.0905 9.71869 21.4042C8.8652 21.7179 7.95037 21.8785 7.02681 21.8767C6.10349 21.8782 5.18895 21.7175 4.33573 21.4038C3.48251 21.0902 2.70742 20.6297 2.055 20.049C0.73898 18.8754 0 17.286 0 15.629C0 13.972 0.73898 12.3825 2.055 11.209L5.03949 8.55734C6.36578 7.37717 8.13228 6.72583 10.0113 6.72583C11.8903 6.72583 13.6568 7.37717 14.9831 8.55734L15.9775 9.44122L13.9887 11.209L12.9944 10.3251Z" fill="url(#paint0_linear_104_1128)" />
-                                                    <defs>
-                                                        <linearGradient id="paint0_linear_104_1128" x1="0" y1="11.2091" x2="24" y2="11.2091" gradientUnits="userSpaceOnUse">
-                                                            <stop stopColor="#AEB2FA" />
-                                                            <stop offset="1" stopColor="#BBB999" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                </svg>
-                                            </a>
+                                            {!isOpenSource &&
+                                                <a className="w-fit" href={links.website} target="_blank" aria-label={`Link to ${name} website.`}>
+                                                    <svg className="w-7 h-7 xl:w-8 xl:h-8" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fillRule="evenodd" clipRule="evenodd" d="M11.0056 3.25284L12 2.36896C13.3199 1.19855 15.1081 0.54126 16.9725 0.54126C18.8368 0.54126 20.6251 1.19855 21.945 2.36896C23.261 3.54252 24 5.13196 24 6.78897C24 8.44598 23.261 10.0354 21.945 11.209L18.9605 13.8606C17.6342 15.0408 15.8677 15.6921 13.9887 15.6921C12.1097 15.6921 10.3432 15.0408 9.0169 13.8606L8.02254 12.9767L10.0113 11.209L11.0056 12.0928C12.5991 13.5093 15.3783 13.5093 16.9718 12.0928L19.9563 9.44122C20.746 8.73703 21.1894 7.78328 21.1894 6.78897C21.1894 5.79466 20.746 4.8409 19.9563 4.13671C19.1637 3.43535 18.0909 3.04159 16.9725 3.04159C15.8541 3.04159 14.7813 3.43535 13.9887 4.13671L12.9943 5.02059L11.0056 3.25284ZM12.9944 10.3251C11.4009 8.90864 8.62172 8.90864 7.02821 10.3251L4.04373 12.9767C3.25401 13.6809 2.81056 14.6347 2.81056 15.629C2.81056 16.6233 3.25401 17.577 4.04373 18.2812C4.8363 18.9826 5.90914 19.3763 7.02751 19.3763C8.14588 19.3763 9.21872 18.9826 10.0113 18.2812L11.0057 17.3974L12.9944 19.1651L12 20.049C11.3475 20.6299 10.5722 21.0905 9.71869 21.4042C8.8652 21.7179 7.95037 21.8785 7.02681 21.8767C6.10349 21.8782 5.18895 21.7175 4.33573 21.4038C3.48251 21.0902 2.70742 20.6297 2.055 20.049C0.73898 18.8754 0 17.286 0 15.629C0 13.972 0.73898 12.3825 2.055 11.209L5.03949 8.55734C6.36578 7.37717 8.13228 6.72583 10.0113 6.72583C11.8903 6.72583 13.6568 7.37717 14.9831 8.55734L15.9775 9.44122L13.9887 11.209L12.9944 10.3251Z" fill="url(#paint0_linear_104_1128)" />
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_104_1128" x1="0" y1="11.2091" x2="24" y2="11.2091" gradientUnits="userSpaceOnUse">
+                                                                <stop stopColor="#AEB2FA" />
+                                                                <stop offset="1" stopColor="#BBB999" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            }
 
                                             <a className="w-fit" href={links.github} target="_blank" aria-label={`Link to ${name} GItHub repositoty.`}>
                                                 <svg className="w-7 h-7 xl:w-8 xl:h-8" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,6 +82,11 @@ export default function Projects(): JSX.Element {
                     )
                 })}
             </div>
+
+            {
+                !isProjectsPage &&
+                <Link to="/projects" className="mt-10 border-b border-b-white pb-1 font-satoshi font-medium text-lg lg:text-xl text-transparent bg-clip-text bg-cta-primary tracking-[0.01em]">See all projects &#8594;</Link>
+            }
         </section>
     )
 }

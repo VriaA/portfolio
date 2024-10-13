@@ -2,6 +2,7 @@ import { useState } from "react"
 import victoria from "@/assets/victoria.webp"
 import logos from "@/data/logos"
 import { useViewport } from "@/hooks/useviewport"
+import { Link } from "react-router-dom"
 
 export default function Header(): JSX.Element {
     const [isMobileNavMenuOpen, setIsMobileNavMenuOpen] = useState<boolean>(false)
@@ -20,9 +21,9 @@ export default function Header(): JSX.Element {
 
         {canShowNav && <nav className="absolute right-5 md:right-20 top-[84%] lg:static bg-[#33333330] backdrop-blur-[2px] rounded-lg shadow-container border border-white/30">
             <ul className="flex flex-col lg:flex-row gap-4 md:gap-8 p-4 md:px-8 md:py-5">
-                <li><a href="#projects" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Projects</a></li>
+                <li><Link to="/projects" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Projects</Link></li>
                 <li><a href="#experience" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Experience</a></li>
-                <li><a href="/" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Resume</a></li>
+                <li><Link to="/" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Resume</Link></li>
                 <li><a href="#contact" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Contact</a></li>
             </ul>
         </nav>}
