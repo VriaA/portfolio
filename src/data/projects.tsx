@@ -25,13 +25,14 @@ export type Project = {
   };
   isCompleted: boolean;
   isOpenSource?: boolean;
+  isFreelance?: boolean
 }
 
 export const projects: Array<Project> = [
   {
     name: "Supportly",
     description:
-      "An empathetic AI companion designed to offer mental health support using Retrieval Augmented Generation, Hugging Face embeddings, and OpenAI's chat completion API.",
+      "An empathetic AI companion designed to offer mental health support using Retrieval-Augmented Generation (RAG) with Hugging Face embeddings and OpenAI’s chat completion API.",
     technologiesUsed: [
       { techName: "HTML", logo: logos.html },
       { techName: "tailwindcss", logo: logos.tailwindcss },
@@ -52,8 +53,7 @@ export const projects: Array<Project> = [
   },
   {
     name: "Kibana (Open source)",
-    description:
-      "Contributed to Kibana, a powerful data visualization and exploration tool. Fixed bugs and wrote unit tests, which helped deepen my understanding of scalable front-end architecture and develop proficiency in navigating and contributing to complex, large-scale projects.",
+    description: "Contributed to Kibana, a powerful data visualization and exploration tool used by over 2,000 companies. Fixed bugs and wrote unit tests, which helped deepen my understanding of scalable front-end architecture and develop proficiency in navigating and contributing to complex, large-scale projects.",
     technologiesUsed: [
       { techName: "eui", logo: logos.eui },
       { techName: "TypeScript", logo: logos.typescript },
@@ -88,7 +88,51 @@ export const projects: Array<Project> = [
       website: "https://youngfinanceleaders.org",
     },
     isCompleted: true,
-  }, {
+    isFreelance: true
+  },
+  {
+    name: "PlatinumRED",
+    description:
+      "A multi-page website designed and developed for PlatinumRed, a company that exports packaged African food products internationally.",
+    technologiesUsed: [
+      { techName: "HTML", logo: logos.html },
+      { techName: "tailwindcss", logo: logos.tailwindcss },
+      { techName: "TypeScript", logo: logos.typescript },
+      { techName: "React", logo: logos.react },
+      { techName: "React Router", logo: logos.reactRouter },
+      { techName: "", logo: logos.gsap },
+      { techName: "Figma", logo: logos.figma },
+    ],
+    imageSrc: platinumred,
+    links: {
+      github: "https://github.com/VriaA/PlatinumRed",
+      website: "https://platinumred.ca/",
+    },
+    isCompleted: true,
+    isFreelance: true
+  },
+  {
+    name: "LinguFlash AI",
+    description:
+      "A web app for mastering languages faster with AI-generated flashcards tailored for various learning needs.",
+    technologiesUsed: [
+      { techName: "HTML", logo: logos.html },
+      { techName: "tailwindcss", logo: logos.tailwindcss },
+      { techName: "mui", logo: logos.mui },
+      { techName: "Next.js", logo: logos.nextjs },
+      { techName: "OpenAi", logo: logos.openai },
+      { techName: "Firebase", logo: logos.firebase },
+      { techName: "Clerk", logo: null },
+      { techName: "Figma", logo: logos.figma },
+    ],
+    imageSrc: linguaFlash,
+    links: {
+      github: "https://github.com/tobilobasalawu/LinguaFlash-AI-Flashcard",
+      website: "https://linguaflashai.vercel.app/",
+    },
+    isCompleted: true,
+  },
+  {
     name: "Pantry Scout",
     description:
       "An intelligent pantry management system that lets you add items using image recognition and generates personalized recipes from your pantry ingredients with AI.",
@@ -129,47 +173,6 @@ export const projects: Array<Project> = [
     links: {
       github: "https://github.com/VriaA/PlatinumRed",
       website: "https://companycritique.vercel.app/",
-    },
-    isCompleted: true,
-  },
-  {
-    name: "LinguFlash AI",
-    description:
-      "A web app for mastering languages faster with AI-generated flashcards tailored for various learning needs.",
-    technologiesUsed: [
-      { techName: "HTML", logo: logos.html },
-      { techName: "tailwindcss", logo: logos.tailwindcss },
-      { techName: "mui", logo: logos.mui },
-      { techName: "Next.js", logo: logos.nextjs },
-      { techName: "OpenAi", logo: logos.openai },
-      { techName: "Firebase", logo: logos.firebase },
-      { techName: "Clerk", logo: null },
-      { techName: "Figma", logo: logos.figma },
-    ],
-    imageSrc: linguaFlash,
-    links: {
-      github: "https://github.com/tobilobasalawu/LinguaFlash-AI-Flashcard",
-      website: "https://linguaflashai.vercel.app/",
-    },
-    isCompleted: true,
-  },
-  {
-    name: "PlatinumRED",
-    description:
-      "A multi-page website designed and developed for PlatinumRed, a company that exports packaged African food products internationally.",
-    technologiesUsed: [
-      { techName: "HTML", logo: logos.html },
-      { techName: "tailwindcss", logo: logos.tailwindcss },
-      { techName: "TypeScript", logo: logos.typescript },
-      { techName: "React", logo: logos.react },
-      { techName: "React Router", logo: logos.reactRouter },
-      { techName: "", logo: logos.gsap },
-      { techName: "Figma", logo: logos.figma },
-    ],
-    imageSrc: platinumred,
-    links: {
-      github: "https://github.com/VriaA/PlatinumRed",
-      website: "https://platinumred.ca/",
     },
     isCompleted: true,
   },
@@ -234,6 +237,7 @@ export const projects: Array<Project> = [
       website: "http://daragram.com/",
     },
     isCompleted: true,
+    isFreelance: true
   },
   {
     name: "Quizzly",

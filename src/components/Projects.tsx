@@ -28,7 +28,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
 
                                 <div className="order-1 xl:order-0 flex flex-col gap-10 xl:gap-20 justify-between h-fit w-full xl:w-[50%]">
                                     {isCompleted ?
-                                        <div className="flex items-start gap-4 w-fit">
+                                        <div className="flex items-center gap-4 w-fit">
                                             {!isOpenSource &&
                                                 <a className="w-fit" href={links.website} target="_blank" aria-label={`Link to ${name} website.`}>
                                                     <svg className="w-7 h-7 xl:w-8 xl:h-8" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">

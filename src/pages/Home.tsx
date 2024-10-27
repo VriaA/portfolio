@@ -6,7 +6,7 @@ import Contact from "@/components/Contact"
 import { projects } from "@/data/projects"
 
 export default function Home(): JSX.Element {
-    const selectedProjects = projects.slice(0, 3);
+    const selectedProjects = projects.slice(0, 4);
     return (
         <>
             <Hero />
