@@ -7,7 +7,7 @@ export default function Skills(): JSX.Element {
     const { viewport } = useContext(AppContext) as TAppContext
 
     return (
-        <section className="relative z-[2] flex flex-col items-center pt-20 pb-10 md:pb-20">
+        <section className="relative z-[2] flex flex-col items-center pt-10 pb-10 md:pb-20">
             <SectionHeader text='Skills' />
             <h3 className=" mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">My Expertise</h3>
             <div className="w-full mt-5 md:mt-10 bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">

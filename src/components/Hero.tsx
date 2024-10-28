@@ -1,9 +1,13 @@
 import GlowingDot from "./GlowingDot"
+import { AppContext, TAppContext } from "@/contexts/AppContext"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
 
 export default function Hero(): JSX.Element {
+    const { viewport } = useContext(AppContext) as TAppContext
+
     return (
-        <section className="relative z-[2] flex flex-col items-center justify-center h-[100svh] text-off-white -mb-20 lg:mb-0">
+        <section className={`${(!viewport.isPc && !viewport.isScreenTall) ? 'pt-40' : ''} relative z-[2] flex flex-col items-center justify-center min-h-[100svh] text-off-white pb-20 md:pb-10`}>
             <p className="flex items-center gap-4 px-4 py-2 h-fit font-satoshi font-medium text-sm lg:text-base tracking-[.01em] bg-metallic-text text-transparent bg-clip-text !leading-none rounded-2xl border bg-dark-gray/20 border-white/30 shadow-container">
                 <GlowingDot style="bg-[#10AC58]" />
                 Open to work</p>
