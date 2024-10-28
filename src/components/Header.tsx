@@ -23,7 +23,7 @@ export default function Header(): JSX.Element {
             <ul className="flex flex-col lg:flex-row gap-4 md:gap-8 p-4 md:px-8 md:py-5">
                 <li><Link to="/projects" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Projects</Link></li>
                 <li><a href="#experience" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Experience</a></li>
-                <li><Link to="/" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Resume</Link></li>
+                <li><a href="https://drive.google.com/file/d/1xl5xTilwH9EUdFXkCZgqR82F2o89HZxk/view?usp=sharing" target="_blank" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Resume</a></li>
                 <li><a href="#contact" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Contact</a></li>
             </ul>
         </nav>}
