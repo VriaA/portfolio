@@ -53,7 +53,7 @@ export const projects: Array<Project> = [
   },
   {
     name: "Kibana (Open source)",
-    description: "Contributed to Kibana, a powerful data visualization and exploration tool used by over 2,000 companies. Fixed bugs and wrote unit tests, which helped deepen my understanding of scalable front-end architecture and develop proficiency in navigating and contributing to complex, large-scale projects.",
+    description: "Contributed to Kibana, a powerful data visualization and exploration tool used by over 2,000 companies. Fixed bugs and wrote unit tests, which helped deepen my understanding of scalable frontend architecture and develop proficiency in navigating and contributing to complex, large-scale projects.",
     technologiesUsed: [
       { techName: "eui", logo: logos.eui },
       { techName: "TypeScript", logo: logos.typescript },
