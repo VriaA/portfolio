@@ -1,52 +1,52 @@
 @tailwind base;
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Brown Sugar";
-  font-style: normal;
-  src: url("/brown-sugar.otf") format("opentype"),
-    url("/brown-sugar.ttf") format("truetype");
+	font-display: swap;
+	font-family: "Brown Sugar";
+	font-style: normal;
+	src: url("/brown-sugar.otf") format("opentype"),
+		url("/brown-sugar.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
-       url('../fonts/Satoshi-Variable.woff') format('woff'),
-       url('../fonts/Satoshi-Variable.ttf') format('truetype');
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: normal;
+	font-family: "Satoshi-Variable";
+	src: url("../fonts/Satoshi-Variable.woff2") format("woff2"),
+		url("../fonts/Satoshi-Variable.woff") format("woff"),
+		url("../fonts/Satoshi-Variable.ttf") format("truetype");
+	font-weight: 300 900;
+	font-display: swap;
+	font-style: normal;
 }
 
 .site-bg {
-  background-image: url(./assets/grid.svg), url(./assets/noise.svg);
-  background-position: left top;
-  background-size: cover;
-  background-color: #010101;
+	background-image: url(./assets/grid.svg), url(./assets/noise.svg);
+	background-position: left top;
+	background-size: cover;
+	background-color: #010101;
 }
 
 .metallic-border {
-  border-image: linear-gradient(
-      90deg,
-      #55555550 0%,
-      #ffffff50 49%,
-      #55555550 100%
-    )
-    1;
+	border-image: linear-gradient(
+			90deg,
+			#55555550 0%,
+			#ffffff50 49%,
+			#55555550 100%
+		)
+		1;
 }
 
-.skill > svg  {
-  width: fit;
-  height: 32px;
+.skill > svg {
+	width: fit;
+	height: 32px;
 }
 
 .project-stack > svg {
-  width: fit;
-  height: 20px;
+	width: fit;
+	height: 20px;
 }
 
 @tailwind components;

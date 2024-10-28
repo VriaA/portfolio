@@ -2,11 +2,11 @@ import SectionHeader from "./SectionHeader"
 
 export default function Contact(): JSX.Element {
     return (
-        <section id="contact" className="relative z-[2] flex flex-col items-center">
+        <section id="contact" className="relative z-[2] flex flex-col items-center pt-10 md:pt-20">
             <SectionHeader text="Contact" />
             <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-transparent">Get in touch</h3>
 
-            <form className="w-full max-w-[600px] mt-10 bg-[#33333330] backdrop-blur px-5 py-10 md:p-10 rounded-2xl" name="contact" method='post' data-netlify='true'>
+            <form className="w-full max-w-[600px] mt-5 md:mt-10 bg-[#33333330] backdrop-blur px-5 py-10 md:p-10 rounded-2xl" name="contact" method='post' data-netlify='true'>
                 <input type="hidden" name='form-name' value='contact' />
                 <fieldset className="grid grid-cols-2 grid-rows-form md:grid-rows-form-md gap-5">
                     <label className="flex flex-col col-start-1 col-end-3 md:col-end-2 row-start-1 row-end-2 gap-3 font-satoshi font-medium !leading-none text-base lg:text-lg tracking-normal bg-transparent text-off-white">Firstname:

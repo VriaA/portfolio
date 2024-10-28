@@ -9,7 +9,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
     const isProjectsPage = location.pathname === "/projects"
 
     return (
-        <section id="projects" className="relative flex flex-col items-center z-[2] text-white">
+        <section id="projects" className="relative flex flex-col items-center py-10 md:py-20 z-[2] text-white">
             <SectionHeader text="Projects" />
             {
                 !isProjectsPage &&
@@ -18,7 +18,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
                 </h3>
             }
 
-            <div className="flex flex-col gap-5 md:gap-14 mt-10 w-full lg:flex-row lg:flex-wrap xl:flex-row ">
+            <div className="flex flex-col gap-5 md:gap-14 mt-5 md:mt-10 w-full lg:flex-row lg:flex-wrap xl:flex-row ">
                 {projects.map((project, i) => {
                     const { name, description, technologiesUsed, imageSrc, links, isCompleted, isOpenSource } = project
                     return (

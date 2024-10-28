@@ -14,9 +14,8 @@ export default [
     logo: logos.tailwindcss
   },
   {
-    skill: "PostCSS",
-    logo: logos.postcss
-
+    skill: "Material UI",
+    logo: logos.mui
   },
   {
     skill: "Rest API",
@@ -41,8 +40,16 @@ export default [
     logo: logos.reactRouter
   },
   {
+    skill: "Next.js",
+    logo: logos.nextjs
+  },
+  {
     skill: "Firebase",
     logo: logos.firebase
+  },
+  {
+    skill: "Jest",
+    logo: logos.jest
   },
   {
     skill: "",
