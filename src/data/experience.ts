@@ -1,25 +1,25 @@
 export default [
-  {
-    role: "Software Engineering Fellow",
-    institution: "Headstarter",
-    startDate: "July 2024",
-    endDate: "Present",
-    description:
-      "I am building 5+ AI applications, managing projects from design to deployment, and getting coached by engineers at Amazon, Bloomberg, and Capital One.",
-  },
-  {
-    role: "Front-end Developer",
-    institution: "Freelance",
-    startDate: "May 2024",
-    endDate: "Present",
-    description: `Designing and developing custom websites and landing pages for small businesses, non-profits, and start-ups. \n Utilizing modern web technologies and implementing basic SEO best practices.`,
-  },
-  {
-    role: "Front-end Developer",
-    institution: "Chingu",
-    startDate: "May 2024",
-    endDate: "June 2024",
-    description:
-      "Collaborated with professional developers and a Scrum Master to develop a personal AI consultant tool, assisting users in finding harmonious color combinations for various applications, including outfit coordination, interior design, website design, and graphic design projects.",
-  },
+	{
+		role: "Frontend Engineer",
+		institution: "Freelance",
+		startDate: "May 2024",
+		endDate: "Present",
+		description: `Designing and developing custom websites and landing pages for small businesses, non-profits, and start-ups. \n Utilizing modern web technologies and implementing basic SEO best practices.`,
+	},
+	{
+		role: "Software Engineering Fellow",
+		institution: "Headstarter",
+		startDate: "July 2024",
+		endDate: "September 2024",
+		description:
+			"Led a team of 4 in the successful development and deployment of 5 innovative projects over 5 weeks. \n Participated in weekly coaching with engineers from top companies like Google, Capital One, Apple, Amazon, and venture-backed startups.",
+	},
+	{
+		role: "Frontend Engineer",
+		institution: "Chingu",
+		startDate: "May 2024",
+		endDate: "June 2024",
+		description:
+			"Collaborated with professional developers and a Scrum Master to develop a personal AI consultant tool. \nActively participated in Agile development practices, including sprint planning and daily stand-ups, to ensure timely progress and effective team communication",
+	},
 ]
