@@ -9,7 +9,7 @@ export default function AppLayout() {
             <div className="absolute inset-0 mx-auto z-[1] left-[-1px] top-[-1px] min-w-[1440px] h-full site-bg"></div>
             <AppContextProvider>
                 <Header />
-                <main className="flex flex-col gap-20 pt-28">
+                <main className="flex flex-col gap-20 pt-20">
                     <Outlet />
                 </main>
                 <Footer />
