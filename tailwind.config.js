@@ -40,9 +40,14 @@ export default {
 					"0%": { "background-position": "100%" },
 					"100%": { "background-position": "-100%" },
 				},
+				right: {
+					"0%": { transform: "translateX(5px)" },
+					"100%": { transform: "translateX(0px)" },
+				},
 			},
 			animation: {
 				shine: "shine 5s linear infinite",
+				right: "right 1s linear infinite",
 			},
 		},
 	},
