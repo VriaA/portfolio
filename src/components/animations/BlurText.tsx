@@ -51,7 +51,7 @@ export default function BlurText({ text, delay = 200, className = '' }: BlurText
                     style={props}
                     className="inline-block will-change-transform will-change-filter will-change-opacity"
                 >
-                    {words[index]}&nbsp;
+                    {words[index]} &nbsp;
                 </animated.span>
             ))}
         </span>
