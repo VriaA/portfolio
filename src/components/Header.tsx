@@ -14,7 +14,7 @@ export default function Header(): JSX.Element {
         setIsMobileNavMenuOpen(prevValue => !prevValue)
     }
 
-    return <header className="fixed left-0 z-10 flex justify-between items-center w-full px-5 md:px-20 mt-5">
+    return <header className="fixed inset-[0 auto] z-10 flex justify-between items-center w-full px-5 md:px-20 mt-5 flex-none max-w-[1440px]">
         <Link to="/" className="w-fit h-[72px] bg-off-white rounded-full overflow-hidden">
             <img className="object-top" src={victoria} width={72} height={89.92} alt="Oyelola victoria" />
         </Link>

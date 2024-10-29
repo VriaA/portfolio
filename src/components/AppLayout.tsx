@@ -15,11 +15,11 @@ export default function AppLayout() {
     }, [location])
 
     return (
-        <div className="relative w-full overflow-hidden bg-black px-5 md:px-20">
+        <div className="relative flex flex-col items-center w-full overflow-hidden bg-black px-5 md:px-20">
             <div className="absolute inset-0 mx-auto z-[1] left-[-1px] top-[-1px] min-w-[1440px] h-full site-bg"></div>
             <AppContextProvider>
                 <Header />
-                <main className="flex flex-col pt-20">
+                <main className="flex flex-col pt-20 w-full max-w-[1440px]">
                     <Outlet />
                 </main>
                 <Footer />
