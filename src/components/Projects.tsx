@@ -3,6 +3,7 @@ import { Project } from "@/data/projects"
 import GlowingDot from "./GlowingDot"
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom"
+import ShinyText from "./animations/ShinyText"
 
 export default function Projects({ projects }: { projects: Project[] }): JSX.Element {
     const location = useLocation()
@@ -85,7 +86,7 @@ export default function Projects({ projects }: { projects: Project[] }): JSX.Ele
 
             {
                 !isProjectsPage &&
-                <Link to="/projects" className="mt-10 border-b border-b-white pb-1 font-satoshi font-medium text-lg lg:text-xl text-transparent bg-clip-text bg-cta-primary tracking-[0.01em]">See all projects &#8594;</Link>
+                <Link to="/projects" className="mt-10 border-b border-b-white pb-1 font-satoshi font-medium text-lg lg:text-xl text-transparent bg-clip-text bg-cta-primary tracking-[0.01em]"><ShinyText text="See all projects" speed={1} /> &#8594;</Link>
             }
         </section>
     )
