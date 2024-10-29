@@ -20,6 +20,6 @@ export default [
 		startDate: "May 2024",
 		endDate: "June 2024",
 		description:
-			"Collaborated with professional developers and a Scrum Master to develop a personal AI consultant tool. \nActively participated in Agile development practices, including sprint planning and daily stand-ups, to ensure timely progress and effective team communication",
+			"Collaborated with an international team of professional developers to develop a personal AI consultant tool. \nActively participated in Agile development practices, including sprint planning and daily stand-ups, to ensure timely progress and effective team communication",
 	},
 ]
