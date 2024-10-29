@@ -21,10 +21,10 @@ export default function Header(): JSX.Element {
 
         {canShowNav && <nav className="absolute right-5 md:right-20 top-[84%] lg:static bg-[#33333330] backdrop-blur-[2px] rounded-lg shadow-container border border-white/30">
             <ul className="flex flex-col lg:flex-row gap-4 md:gap-8 p-4 md:px-8 md:py-5">
-                <li><Link to="/projects" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Projects</Link></li>
-                <li><Link to=".#experience" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Experience</Link></li>
-                <li><a href="https://drive.google.com/file/d/1xl5xTilwH9EUdFXkCZgqR82F2o89HZxk/view?usp=sharing" target="_blank" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Resume</a></li>
-                <li><Link to="#contact" className="font-satoshi text-base text-off-white font-medium !leading-none tracking-[.01em]">Contact</Link></li>
+                <li><Link to="/projects" className="font-satoshi text-base text-off-white metallic-border hover:bg-cta-primary hover:bg-clip-text hover:text-transparent font-medium !leading-none tracking-[.01em]">Projects</Link></li>
+                <li><Link to=".#experience" className="font-satoshi text-base text-off-white metallic-border hover:bg-cta-primary hover:bg-clip-text hover:text-transparent font-medium !leading-none tracking-[.01em]">Experience</Link></li>
+                <li><a href="https://drive.google.com/file/d/1xl5xTilwH9EUdFXkCZgqR82F2o89HZxk/view?usp=sharing" target="_blank" className="font-satoshi text-base text-off-white metallic-border hover:bg-cta-primary hover:bg-clip-text hover:text-transparent font-medium !leading-none tracking-[.01em]">Resume</a></li>
+                <li><Link to="#contact" className="font-satoshi text-base text-off-white metallic-border hover:bg-cta-primary hover:bg-clip-text hover:text-transparent font-medium !leading-none tracking-[.01em]">Contact</Link></li>
             </ul>
         </nav>}
 
