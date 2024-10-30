@@ -4,10 +4,13 @@ import Header from "@/components/Header"
 import AppContextProvider from "@/contexts/AppContext"
 import Footer from "@/components/Footer"
 import useScrollToSectionOnHashChange from "@/hooks/useScrollToSectionOnHashChange"
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function AppLayout() {
     const location = useLocation()
     useScrollToSectionOnHashChange()
+    gsap.registerPlugin(useGSAP);
 
     useEffect(() => {
         if (location.hash) return
