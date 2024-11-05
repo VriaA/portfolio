@@ -62,7 +62,7 @@ export const projects: Array<Project> = [
     ],
     imageSrc: kibana,
     links: {
-      github: "https://github.com/elastic/kibana/commits?author=VriaA",
+      github: "https://github.com/elastic/kibana/pulls?q=is%3Apr+author%3AVriaA+",
     },
     isCompleted: true,
     isOpenSource: true
