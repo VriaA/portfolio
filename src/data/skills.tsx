@@ -10,7 +10,7 @@ export default [
     logo: logos.css
   },
   {
-    skill: "tailwindcss",
+    skill: "Tailwind CSS",
     logo: logos.tailwindcss
   },
   {
