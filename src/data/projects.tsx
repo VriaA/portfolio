@@ -112,7 +112,7 @@ export const projects: Array<Project> = [
     isFreelance: true
   },
   {
-    name: "LinguFlash AI",
+    name: "LinguaFlash AI",
     description:
       "A web app for mastering languages faster with AI-generated flashcards tailored for various learning needs.",
     technologiesUsed: [
