@@ -10,7 +10,7 @@ export default function Hero(): JSX.Element {
     useAnimateHomeHero()
 
     return (
-        <section className={`${(!viewport.isPc && !viewport.isScreenTall) ? 'pt-40' : ''} relative z-[2] flex flex-col items-center justify-center min-h-[100svh] 2xl:min-h-fit 2xl:h-[920px] text-off-white pb-20 md:pb-10`}>
+        <section className={`${(!viewport.isScreenTall) ? 'mt-40 mb-28' : ''} relative z-[2] flex flex-col items-center justify-center h-[calc(100svh-80px)] 2xl:max-h-[920px] text-off-white`}>
             <p id="work-status" className="flex items-center gap-4 px-4 py-2 h-fit font-satoshi font-medium text-sm lg:text-base tracking-[.01em] bg-metallic-text text-transparent bg-clip-text !leading-none rounded-2xl border bg-dark-gray/20 border-white/30 shadow-container opacity-0">
                 <GlowingDot style="bg-[#10AC58]" />
                 Open to work</p>

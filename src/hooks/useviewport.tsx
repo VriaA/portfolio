@@ -12,7 +12,7 @@ export function useViewport(): [TViewport] {
         isPc: window.innerWidth >= 1024,
         isTablet: window.innerWidth >= 768 && window.innerWidth < 1024,
         isMobile: window.innerWidth < 768,
-        isScreenTall: window.innerHeight >= 800
+        isScreenTall: window.innerHeight >= 600
     });
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export function useViewport(): [TViewport] {
                 isPc: width >= 1024,
                 isTablet: width >= 768 && width < 1024,
                 isMobile: width < 768,
-                isScreenTall: height >= 800
+                isScreenTall: height >= 600
             };
             setViewport(prevViewport =>
                 prevViewport.isPc !== newViewport.isPc ||
