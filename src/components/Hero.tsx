@@ -26,7 +26,7 @@ export default function Hero(): JSX.Element {
 
             <div className="flex gap-4 md:gap-8 items-center mt-10">
                 <Link to="#contact" className="hero-element py-3 px-6 md:py-3 md:px-8 font-semibold font-satoshi text-base md:text-lg xl:text-xl -tracking-[.02em] !leading-none text-black bg-cta-primary rounded-lg hover:bg-none hover:bg-[#AEB2FA] opacity-0 translate-y-12 lg:translate-y-28">Contact</Link>
-                <a href="https://drive.google.com/file/d/1xl5xTilwH9EUdFXkCZgqR82F2o89HZxk/view?usp=sharing" target="_blank" className="hero-element px-0 pb-[2px] font-satoshi text-base md:text-lg lg:text-xl font-regular tracking-[.01em] !leading-none border-b metallic-border hover:bg-cta-primary hover:bg-clip-text hover:text-transparent opacity-0 translate-y-12 lg:translate-y-28">Resume</a>
+                <a href="https://drive.google.com/file/d/1KEAivFrgfG6GThUM7FIDySS0_Fzqng_Q/view?usp=sharing" target="_blank" className="hero-element px-0 pb-[2px] font-satoshi text-base md:text-lg lg:text-xl font-regular tracking-[.01em] !leading-none border-b metallic-border hover:bg-cta-primary hover:bg-clip-text hover:text-transparent opacity-0 translate-y-12 lg:translate-y-28">Resume</a>
             </div>
         </section>
     )
