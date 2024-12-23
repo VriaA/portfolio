@@ -12,25 +12,9 @@ import linguaFlash from "@/assets/lingua_flash_mockup.svg";
 import parentFest from "@/assets/parentalPal_mockup.svg";
 import cfo from "@/assets/cfo_africa_mockup.svg";
 import logos from "./logos";
+import { ProjectData } from "@/types/project";
 
-export type Project = {
-    name: string;
-    description: string;
-    technologiesUsed: {
-        techName: string;
-        logo: JSX.Element | null;
-    }[];
-    imageSrc: string;
-    links: {
-        github: string;
-        website?: string;
-    };
-    isCompleted: boolean;
-    isOpenSource?: boolean;
-    isFreelance?: boolean;
-};
-
-export const projects: Array<Project> = [
+export const projects: Array<ProjectData> = [
     {
         name: "CFO Africa",
         description:
@@ -45,14 +29,13 @@ export const projects: Array<Project> = [
         ],
         imageSrc: cfo,
         links: {
-            github: "",
-            website: "https://cfoafrica.co/",
+            website: "https://cfoafrica.co",
         },
         isCompleted: true,
         isFreelance: true,
     },
     {
-        name: "Kibana (Open source)",
+        name: "Kibana",
         description:
             "Contributed to Kibana, a powerful data visualization and exploration tool used by over 2,000 companies. Fixed bugs and wrote unit tests, which helped deepen my understanding of scalable frontend architecture and develop proficiency in navigating and contributing to complex, large-scale projects.",
         technologiesUsed: [
@@ -86,9 +69,10 @@ export const projects: Array<Project> = [
         imageSrc: supportly,
         links: {
             github: "https://github.com/VriaA/Supportly",
-            website: "https://supportly.vercel.app/",
+            website: "https://supportly.vercel.app",
         },
         isCompleted: true,
+        isTeam: true,
     },
     {
         name: "Young Finance Leaders",
@@ -107,7 +91,6 @@ export const projects: Array<Project> = [
         ],
         imageSrc: yfl,
         links: {
-            github: "https://github.com/VriaA/young-finance-leaders",
             website: "https://youngfinanceleaders.org",
         },
         isCompleted: true,
@@ -128,8 +111,7 @@ export const projects: Array<Project> = [
         ],
         imageSrc: platinumred,
         links: {
-            github: "https://github.com/VriaA/PlatinumRed",
-            website: "https://platinumred.ca/",
+            website: "https://platinumred.ca",
         },
         isCompleted: true,
         isFreelance: true,
@@ -151,9 +133,10 @@ export const projects: Array<Project> = [
         imageSrc: linguaFlash,
         links: {
             github: "https://github.com/tobilobasalawu/LinguaFlash-AI-Flashcard",
-            website: "https://linguaflashai.vercel.app/",
+            website: "https://linguaflashai.vercel.app",
         },
         isCompleted: true,
+        isTeam: true,
     },
     {
         name: "Pantry Scout",
@@ -195,9 +178,10 @@ export const projects: Array<Project> = [
         imageSrc: companyCritique,
         links: {
             github: "https://github.com/VriaA/PlatinumRed",
-            website: "https://companycritique.vercel.app/",
+            website: "https://companycritique.vercel.app",
         },
         isCompleted: true,
+        isTeam: true,
     },
     {
         name: "Film Watchlist",
@@ -216,7 +200,7 @@ export const projects: Array<Project> = [
         imageSrc: watchlist,
         links: {
             github: "https://github.com/VriaA/watchlist",
-            website: "https://myfilmwatchlist.netlify.app/",
+            website: "https://myfilmwatchlist.netlify.app",
         },
         isCompleted: true,
     },
@@ -240,9 +224,10 @@ export const projects: Array<Project> = [
         links: {
             github: "https://github.com/chingu-voyages/v49-tier2-team-15",
             website:
-                "https://color-inspo-chingu-v49-tier-2-team-15.netlify.app/",
+                "https://color-inspo-chingu-v49-tier-2-team-15.netlify.app",
         },
         isCompleted: true,
+        isTeam: true,
     },
     {
         name: "Daragram",
@@ -257,8 +242,7 @@ export const projects: Array<Project> = [
         ],
         imageSrc: daragram,
         links: {
-            github: "https://github.com/VriaA/Daragram",
-            website: "http://daragram.com/",
+            website: "http://daragram.com",
         },
         isCompleted: true,
         isFreelance: true,
@@ -276,13 +260,11 @@ export const projects: Array<Project> = [
         ],
         imageSrc: parentFest,
         links: {
-            github: "https://github.com/VriaA/ParentalPal",
             website: "https://parentfest.parentalpal.org",
         },
         isCompleted: true,
         isFreelance: true,
     },
-
     {
         name: "Quizzly",
         description:
