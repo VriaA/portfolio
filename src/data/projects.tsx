@@ -71,7 +71,7 @@ export const projects: Array<ProjectData> = [
             github: "https://github.com/VriaA/Supportly",
             website: "https://supportly.vercel.app",
         },
-        isCompleted: true,
+        isCompleted: false,
         isTeam: true,
     },
     {

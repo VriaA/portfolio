@@ -26,7 +26,9 @@ export default function Project({
             className="flex flex-col items-center lg:w-[calc(50%-20px)] xl:w-full bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">
             <div className="flex flex-col xl:flex-row gap-10 items-center xl:items-end xl:justify-between w-full h-full bg-black rounded-2xl px-5 md:px-10 py-10">
                 <img
-                    className="order-0 xl:order-2 w-[300px] lg:w-[540px] h-fit"
+                    className={`${
+                        !isCompleted ? "blur-md" : ""
+                    } order-0 xl:order-2 w-[300px] lg:w-[540px] h-fit`}
                     src={imageSrc}
                     alt={`Oyelola Victoria's ${name} Project`}
                 />
