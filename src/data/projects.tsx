@@ -1,16 +1,16 @@
-import platinumred from "@/assets/platinumred_mockup.svg";
-import colorinspo from "@/assets/color_inspo_mockup.svg";
-import watchlist from "@/assets/watchlist_mockup.svg";
-import daragram from "@/assets/daragram_mockup.svg";
-import quizzly from "@/assets/quizzly_mockup.svg";
-import yfl from "@/assets/yfl_mockup.svg";
-import supportly from "@/assets/supportly_mockup.svg";
-import companyCritique from "@/assets/company_critique_mockup.svg";
+import platinumred from "@/assets/platinumred_mockup.webp";
+import colorinspo from "@/assets/color_inspo_mockup.webp";
+import watchlist from "@/assets/watchlist_mockup.webp";
+import daragram from "@/assets/daragram_mockup.webp";
+import quizzly from "@/assets/quizzly_mockup.webp";
+import yfl from "@/assets/yfl_mockup.webp";
+import supportly from "@/assets/supportly_mockup.webp";
+import companyCritique from "@/assets/company_critique_mockup.webp";
 import kibana from "@/assets/kibana.webp";
-import pantryScout from "@/assets/pantry_scout_mockup.svg";
-import linguaFlash from "@/assets/lingua_flash_mockup.svg";
-import parentFest from "@/assets/parentalPal_mockup.svg";
-import cfo from "@/assets/cfo_africa_mockup.svg";
+import pantryScout from "@/assets/pantry_scout_mockup.webp";
+import linguaFlash from "@/assets/lingua_flash_mockup.webp";
+import parentFest from "@/assets/parentalPal_mockup.webp";
+import cfo from "@/assets/cfo_africa_mockup.webp";
 import logos from "./logos";
 import { ProjectData } from "@/types/project";
 
@@ -71,7 +71,7 @@ export const projects: Array<ProjectData> = [
             github: "https://github.com/VriaA/Supportly",
             website: "https://supportly.vercel.app",
         },
-        isCompleted: false,
+        isCompleted: true,
         isTeam: true,
     },
     {
