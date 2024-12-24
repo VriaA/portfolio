@@ -24,7 +24,7 @@ export default function Projects({
                 </h3>
             )}
 
-            <div className="flex flex-col gap-5 lg:gap-10 mt-5 md:mt-10 w-full lg:flex-row lg:flex-wrap xl:flex-row ">
+            <div className="flex flex-col lg:flex-row lg:flex-wrap xl:flex-row gap-5 lg:gap-10 w-full mt-5 md:mt-10">
                 {projects.map((project, i) => {
                     return <Project project={project} index={i} />;
                 })}
