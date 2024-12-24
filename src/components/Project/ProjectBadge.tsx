@@ -5,12 +5,12 @@ export default function ProjectBadge({
     isTeam,
 }: ProjectType): JSX.Element {
     const COLOR = isFreelance
-        ? "bg-emerald-500/10 text-emerald-500 border-emerald-500"
+        ? "freelance-badge"
         : isOpenSource
-        ? "bg-yellow-400/10 text-yellow-400 border-yellow-400"
+        ? "open-source-badge"
         : isTeam
-        ? "bg-sky-500/10 text-sky-500 border-sky-500"
-        : "bg-off-white/10 text-off-white border-off-white";
+        ? "team-badge"
+        : "personal-badge";
 
     return (
         <p

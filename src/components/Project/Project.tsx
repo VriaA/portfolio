@@ -26,7 +26,7 @@ export default function Project({
     const { viewport } = useContext(AppContext) as TAppContext;
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
-    const top = viewport.isMobile || isProjectsPage ? 96 : 96 + 80 * index;
+    const top = viewport.isMobile ? 116 : isProjectsPage ? 170 : 126;
 
     return (
         <div

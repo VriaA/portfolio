@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ShinyText from "./animations/ShinyText";
 import Project from "./Project/Project";
+import { useFilterProjects } from "@/hooks/useFilterProjects";
+import ProjectsFilter from "./Project/ProjectsFilter";
 
 export default function Projects({
     projects,
@@ -12,20 +14,24 @@ export default function Projects({
 }): JSX.Element {
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
+    const { projectsToRender, filter } = useFilterProjects(projects);
 
     return (
         <section
             id="projects"
             className="relative flex flex-col items-center py-10 md:py-20 z-[2] text-white">
             <SectionHeader text="Projects" />
+
             {!isProjectsPage && (
                 <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">
                     Selected works
                 </h3>
             )}
 
+            {isProjectsPage && <ProjectsFilter filter={filter} />}
+
             <div className="flex flex-col lg:flex-row lg:flex-wrap xl:flex-row gap-5 lg:gap-10 w-full mt-5 md:mt-10">
-                {projects.map((project, i) => {
+                {projectsToRender.map((project, i) => {
                     return <Project project={project} index={i} />;
                 })}
             </div>
