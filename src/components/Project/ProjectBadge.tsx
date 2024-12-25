@@ -14,7 +14,7 @@ export default function ProjectBadge({
 
     return (
         <p
-            className={`${COLOR} px-2 h-7 xl:h-8 grid place-content-center mt-0 border rounded-2xl font-satoshi font-normal text-sm lg:text-base tracking-[.01em] !leading-none`}>
+            className={`${COLOR} px-2 h-7 xl:h-8 grid place-content-center mt-0 border rounded-2xl font-satoshi font-normal text-sm xl:text-base tracking-[.01em] !leading-none`}>
             {isFreelance
                 ? "Freelance"
                 : isOpenSource

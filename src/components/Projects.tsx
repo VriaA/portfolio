@@ -42,7 +42,7 @@ export default function Projects({
             {!isProjectsPage && (
                 <Link
                     to="/projects"
-                    className="group flex items-center gap-2 mt-10 border-b border-b-white pb-1 font-satoshi font-medium text-lg lg:text-xl text-transparent bg-clip-text bg-cta-primary tracking-[0.01em]">
+                    className="group flex items-center gap-2 mt-10 border-b border-b-white pb-1 font-satoshi font-medium text-lg xl:text-xl text-transparent bg-clip-text bg-cta-primary tracking-[0.01em]">
                     <ShinyText text="See all projects" speed={1} />
                     <svg
                         className="w-5 animate-right group-hover:animate-none"

@@ -50,7 +50,7 @@ html {
 }
 
 .project-badge {
-    @apply px-2 h-7 xl:h-8 grid place-content-center mt-0 font-satoshi font-normal text-sm lg:text-base tracking-[.01em] !leading-none rounded-2xl min-w-14;
+    @apply px-2 h-7 xl:h-8 grid place-content-center mt-0 font-satoshi font-normal text-sm xl:text-base tracking-[.01em] !leading-none rounded-2xl min-w-14;
 }
 
 .freelance-badge {
