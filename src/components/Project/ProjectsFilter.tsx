@@ -16,35 +16,35 @@ export default function ProjectsFilter({
                 to="."
                 className={`${
                     !filter ? "bg-dark-gray/10 border border-dark-gray" : ""
-                } project-badge text-gray-400`}>
+                } project-badge text-gray-400 transition-colors duration-1000`}>
                 All
             </Link>
             <Link
                 to="?filter=freelance"
                 className={`text-gray-400 ${
                     filter === "freelance" ? "freelance-badge" : ""
-                } project-badge`}>
+                } project-badge transition-colors duration-1000`}>
                 Freelance Projects
             </Link>
             <Link
                 to="?filter=team"
                 className={`text-gray-400 ${
                     filter === "team" ? "team-badge" : ""
-                } project-badge`}>
+                } project-badge transition-colors duration-1000`}>
                 Team Projects
             </Link>
             <Link
                 to="?filter=personal"
                 className={`text-gray-400 ${
                     filter === "personal" ? "personal-badge" : ""
-                } project-badge`}>
+                } project-badge transition-colors duration-1000`}>
                 Personal Projects
             </Link>
             <Link
                 to="?filter=open-source"
                 className={`text-gray-400 ${
                     filter === "open-source" ? "open-source-badge" : ""
-                } project-badge `}>
+                } project-badge transition-colors duration-1000 `}>
                 Open Source Contributions
             </Link>
         </div>
