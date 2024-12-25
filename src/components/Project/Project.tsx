@@ -26,12 +26,13 @@ export default function Project({
     const { viewport } = useContext(AppContext) as TAppContext;
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
+    const POSITION_CLASS = viewport.canStick ? "sticky" : "";
     const top = viewport.isMobile ? 116 : isProjectsPage ? 170 : 126;
 
     return (
         <div
             key={`project-${index + 1}`}
-            className={`sticky flex-none flex flex-col items-center lg:w-[calc(50%-20px)] xl:w-full bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden`}
+            className={`${POSITION_CLASS} flex-none flex flex-col items-center lg:w-[calc(50%-20px)] xl:w-full bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden`}
             style={{ top: top }}>
             <div className="flex flex-col xl:flex-row gap-10 items-center xl:items-end xl:justify-between w-full h-full bg-black rounded-2xl px-5 md:px-10 py-10">
                 <img
