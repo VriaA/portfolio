@@ -24,9 +24,11 @@ html {
 
 .site-bg {
     background-image: url(./assets/grid.svg), url(./assets/noise.svg);
-    background-position: left top;
-    background-size: cover;
+    background-position: center top;
+    background-size: auto;
     background-color: #010101;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .metallic-border {
