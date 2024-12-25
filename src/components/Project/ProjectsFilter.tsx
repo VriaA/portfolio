@@ -6,7 +6,7 @@ export default function ProjectsFilter({
     filter: string | null;
 }): JSX.Element {
     return (
-        <div className="sticky top-[116px] flex flex-wrap gap-5 mt-5 md:mt-10">
+        <div className="sticky top-[116px] flex flex-wrap gap-5 mt-10">
             <Link
                 to="."
                 className={`${

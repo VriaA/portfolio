@@ -15,11 +15,14 @@ export default function Projects({
     const location = useLocation();
     const isProjectsPage = location.pathname === "/projects";
     const { projectsToRender, filter } = useFilterProjects(projects);
+    const SECTION_PADDING = isProjectsPage
+        ? "py-10 pt-0 md:py-20 md:pt-0"
+        : "py-10 md:py-20";
 
     return (
         <section
             id="projects"
-            className="relative flex flex-col items-center py-10 md:py-20 z-[2] text-white">
+            className={`relative flex flex-col items-center z-[2] text-white ${SECTION_PADDING}`}>
             <SectionHeader text="Projects" />
 
             {!isProjectsPage && (
