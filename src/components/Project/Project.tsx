@@ -7,7 +7,6 @@ import { AppContext, TAppContext } from "@/contexts/AppContext";
 
 export default function Project({
     project,
-    index,
 }: {
     project: ProjectData;
     index: number;
@@ -31,7 +30,6 @@ export default function Project({
 
     return (
         <div
-            key={`project-${index + 1}`}
             className={`${POSITION_CLASS} flex-none flex flex-col items-center w-full h-fit bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden`}
             style={{ top: top }}>
             <div className="flex flex-col lg:flex-row gap-10 items-center xl:items-end lg:justify-between w-full h-full bg-black rounded-2xl px-5 md:px-10 py-10">

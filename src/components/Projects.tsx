@@ -35,7 +35,13 @@ export default function Projects({
 
             <div className="flex flex-col lg:flex-row lg:flex-wrap xl:flex-row gap-5 lg:gap-10 w-full mt-5 md:mt-10">
                 {projectsToRender.map((project, i) => {
-                    return <Project project={project} index={i} />;
+                    return (
+                        <Project
+                            project={project}
+                            index={i}
+                            key={`project-${i + 1}`}
+                        />
+                    );
                 })}
             </div>
 
