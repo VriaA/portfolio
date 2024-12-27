@@ -1,9 +1,5 @@
 @tailwind base;
 
-html {
-    scroll-behavior: smooth;
-}
-
 @font-face {
     font-display: swap;
     font-family: "Brown Sugar";
