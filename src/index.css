@@ -71,5 +71,9 @@ html {
     @apply bg-off-white/10 !text-off-white border-off-white border;
 }
 
+.name .word {
+    @apply opacity-0 blur-[8px] translate-y-12 lg:translate-y-28;
+}
+
 @tailwind components;
 @tailwind utilities;

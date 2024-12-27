@@ -20,13 +20,8 @@ export default function Hero(): JSX.Element {
                 <GlowingDot style="bg-[#10AC58]" />
                 Open to work
             </p>
-            <h1 className="flex flex-wrap min-[580px]:gap-x-2 min-[800px]:gap-x-4 justify-center mt-12 text-center font-brown-sugar text-[64px] md:text-8xl xl:text-[120px] text-off-white -tracking-[.02em] !leading-none xl:!leading-[70%]">
-                <span className="name opacity-0 blur-[8px] translate-y-12 lg:translate-y-28">
-                    Oyelola{" "}
-                </span>
-                <span className="name blur-[8px] opacity-0 translate-y-12 lg:translate-y-28">
-                    Victoria
-                </span>
+            <h1 className="name opacity-0 mt-12 text-center font-brown-sugar text-[64px] md:text-8xl xl:text-[120px] text-off-white -tracking-[.02em] !leading-none">
+                Oyelola Victoria
             </h1>
             <p className="hero-element w-full sm:max-w-[950px] mt-2 md:mt-4 text-center font-satoshi font-normal text-base md:text-lg xl:text-xl !leading-[150%] tracking-[.01em] text-transparent bg-metallic-text bg-clip-text opacity-0 translate-y-12 lg:translate-y-28">
                 <ShinyText
