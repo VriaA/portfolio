@@ -8,6 +8,6 @@ export default function useScrollToSectionOnHashChange(): void {
         if (!location.hash) return
 
         const elementId = location.hash.split('#')[1]
-        document.getElementById(elementId)?.scrollIntoView({ behavior: 'smooth' })
+        document.getElementById(elementId)?.scrollIntoView()
     }, [location.hash])
 }
