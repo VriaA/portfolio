@@ -6,9 +6,7 @@ export default function Contact(): JSX.Element {
             id="contact"
             className="relative z-[2] flex flex-col items-center pt-10 md:pt-20">
             <SectionHeader text="Contact" />
-            <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">
-                Get in touch
-            </h3>
+            <h3 className="heading">Get in touch</h3>
 
             <form
                 className="w-full max-w-[600px] mt-5 md:mt-10 bg-[#33333330] backdrop-blur px-5 py-10 md:p-10 rounded-2xl"

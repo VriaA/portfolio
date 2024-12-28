@@ -8,12 +8,14 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis } from "lenis/react";
+import useAnimateHeading from "@/hooks/gsap_animations/useAnimateHeading";
 
 export default function AppLayout() {
     const location = useLocation();
     useScrollToSectionOnHashChange();
     gsap.registerPlugin(useGSAP);
     gsap.registerPlugin(ScrollTrigger);
+    useAnimateHeading();
 
     useEffect(() => {
         if (location.hash) return;

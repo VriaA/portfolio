@@ -25,11 +25,7 @@ export default function Projects({
             className={`relative flex flex-col items-center z-[2] text-white ${SECTION_PADDING}`}>
             <SectionHeader text="Projects" />
 
-            {!isProjectsPage && (
-                <h3 className="mt-4 md:mt-6 text-center font-brown-sugar text-[32px] md:text-[52px] text-off-white -tracking-[.02em] !leading-none">
-                    Selected works
-                </h3>
-            )}
+            {!isProjectsPage && <h3 className="heading">Selected works</h3>}
 
             {isProjectsPage && <ProjectsFilter filter={filter} />}
 
