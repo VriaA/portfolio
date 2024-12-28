@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 export type TViewport = {
+    isXl: boolean;
     isPc: boolean;
     isTablet: boolean;
     isMobile: boolean;
@@ -10,6 +11,7 @@ export type TViewport = {
 
 export function useViewport(): [TViewport] {
     const [viewport, setViewport] = useState<TViewport>({
+        isXl: window.innerWidth >= 1530,
         isPc: window.innerWidth >= 1024,
         isTablet: window.innerWidth >= 768 && window.innerWidth < 1024,
         isMobile: window.innerWidth < 768,
@@ -24,6 +26,7 @@ export function useViewport(): [TViewport] {
             const width = window.innerWidth;
             const height = window.innerHeight;
             const newViewport: TViewport = {
+                isXl: window.innerWidth >= 1530,
                 isPc: width >= 1024,
                 isTablet: width >= 768 && width < 1024,
                 isMobile: width < 768,
@@ -33,6 +36,7 @@ export function useViewport(): [TViewport] {
                     window.innerWidth >= 1024,
             };
             setViewport((prevViewport) =>
+                prevViewport.isXl !== newViewport.isPc ||
                 prevViewport.isPc !== newViewport.isPc ||
                 prevViewport.isTablet !== newViewport.isTablet ||
                 prevViewport.isMobile !== newViewport.isMobile ||
