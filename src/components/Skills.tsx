@@ -2,11 +2,13 @@ import SectionHeader from "./SectionHeader";
 import skills from "@/data/skills";
 import { AppContext, TAppContext } from "@/contexts/AppContext";
 import { useContext } from "react";
+import useAnimateSkills from "@/hooks/gsap_animations/useAnimateSkill";
 
 export default function Skills(): JSX.Element {
     const {
         viewport: { isXl, isMobile },
     } = useContext(AppContext) as TAppContext;
+    useAnimateSkills();
 
     return (
         <section className="relative z-[2] flex flex-col items-center pt-10 pb-10 md:pb-20">
