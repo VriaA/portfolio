@@ -6,12 +6,14 @@ import Footer from "@/components/Footer";
 import useScrollToSectionOnHashChange from "@/hooks/useScrollToSectionOnHashChange";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis } from "lenis/react";
 
 export default function AppLayout() {
     const location = useLocation();
     useScrollToSectionOnHashChange();
     gsap.registerPlugin(useGSAP);
+    gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
         if (location.hash) return;

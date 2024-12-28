@@ -8,6 +8,7 @@ export default {
                 "off-white": "#E8E8E8",
                 "dark-gray": "#333333",
                 black: "#010101",
+                lavender: "#a7a7c2",
             },
             fontFamily: {
                 "brown-sugar": ["Brown sugar", "cursive"],

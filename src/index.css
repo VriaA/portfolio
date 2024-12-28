@@ -71,5 +71,9 @@
     @apply opacity-0 blur-[8px] translate-y-12 lg:translate-y-28;
 }
 
+.experience .char {
+    @apply opacity-10 translate-y-1;
+}
+
 @tailwind components;
 @tailwind utilities;
