@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ProjectData } from "@/types/project";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export type FilterProjects = {
     projectsToRender: Array<ProjectData>;
@@ -45,6 +46,10 @@ export function useFilterProjects(
 
         setProjectsToRender(filteredProjects);
     }, [projects, filter]);
+
+    useEffect(()=> {
+        ScrollTrigger.refresh()
+    }, [projectsToRender])
 
     return { projectsToRender, filter };
 }
