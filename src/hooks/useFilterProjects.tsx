@@ -14,7 +14,7 @@ export function useFilterProjects(
     const [searchParams] = useSearchParams();
     const [projectsToRender, setProjectsToRender] =
         useState<Array<ProjectData>>(projects);
-    const filter = searchParams.get("filter");
+    const filter = searchParams.get("type");
 
     useEffect(() => {
         let filteredProjects;

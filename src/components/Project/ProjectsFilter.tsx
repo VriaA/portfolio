@@ -20,28 +20,28 @@ export default function ProjectsFilter({
                 All
             </Link>
             <Link
-                to="?filter=freelance"
+                to="?type=freelance"
                 className={`text-gray-400 ${
                     filter === "freelance" ? "freelance-badge" : ""
                 } project-badge transition-colors duration-1000`}>
                 Freelance Projects
             </Link>
             <Link
-                to="?filter=team"
+                to="?type=team"
                 className={`text-gray-400 ${
                     filter === "team" ? "team-badge" : ""
                 } project-badge transition-colors duration-1000`}>
                 Team Projects
             </Link>
             <Link
-                to="?filter=personal"
+                to="?type=personal"
                 className={`text-gray-400 ${
                     filter === "personal" ? "personal-badge" : ""
                 } project-badge transition-colors duration-1000`}>
                 Personal Projects
             </Link>
             <Link
-                to="?filter=open-source"
+                to="?type=open-source"
                 className={`text-gray-400 ${
                     filter === "open-source" ? "open-source-badge" : ""
                 } project-badge transition-colors duration-1000 `}>
