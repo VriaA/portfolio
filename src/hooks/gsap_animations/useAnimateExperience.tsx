@@ -14,7 +14,7 @@ export default function useAnimateExperience(): void {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".experience",
-                    start: "top 40%",
+                    start: "top 60%",
                     scrub: viewport.isPc ? 2 : 5,
                     markers: false,
                 },
