@@ -14,7 +14,11 @@ export default function Contact(): JSX.Element {
                 name="contact"
                 method="post"
                 data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
+                <input
+                    type="hidden"
+                    name="form-name"
+                    value="contact"
+                />
                 <fieldset className="grid grid-cols-2 grid-rows-form md:grid-rows-form-md gap-5">
                     <label className="flex flex-col col-start-1 col-end-3 md:col-end-2 row-start-1 row-end-2 gap-3 font-satoshi font-medium !leading-none text-base xl:text-lg tracking-normal bg-transparent text-off-white">
                         Firstname:

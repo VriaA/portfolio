@@ -1,13 +1,13 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function useScrollToSectionOnHashChange(): void {
-    const location = useLocation()
+    const location = useLocation();
 
     useEffect(() => {
-        if (!location.hash) return
+        if (!location.hash) return;
 
-        const elementId = location.hash.split('#')[1]
-        document.getElementById(elementId)?.scrollIntoView()
-    }, [location.hash])
+        const elementId = location.hash.split("#")[1];
+        document.getElementById(elementId)?.scrollIntoView();
+    }, [location.hash]);
 }

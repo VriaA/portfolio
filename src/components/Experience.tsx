@@ -7,7 +7,9 @@ export default function Experience(): JSX.Element {
     useAnimateExperience();
 
     return (
-        <div id="experience" className="relative z-[2] py-10 md:py-20">
+        <div
+            id="experience"
+            className="relative z-[2] py-10 md:py-20">
             <section className="bg-metallic-gradient md:bg-none p-[1px] rounded-2xl overflow-hidden">
                 <div className="flex flex-col items-center justify-center bg-black md:bg-transparent rounded-2xl py-10 md:p-0">
                     <SectionHeader text="Experience" />

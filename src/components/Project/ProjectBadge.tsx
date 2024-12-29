@@ -7,10 +7,10 @@ export default function ProjectBadge({
     const COLOR = isFreelance
         ? "freelance-badge"
         : isOpenSource
-        ? "open-source-badge"
-        : isTeam
-        ? "team-badge"
-        : "personal-badge";
+          ? "open-source-badge"
+          : isTeam
+            ? "team-badge"
+            : "personal-badge";
 
     return (
         <p
@@ -18,10 +18,10 @@ export default function ProjectBadge({
             {isFreelance
                 ? "Freelance"
                 : isOpenSource
-                ? "Open Source"
-                : isTeam
-                ? "Team"
-                : "Personal"}
+                  ? "Open Source"
+                  : isTeam
+                    ? "Team"
+                    : "Personal"}
         </p>
     );
 }

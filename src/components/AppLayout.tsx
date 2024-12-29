@@ -23,7 +23,9 @@ export default function AppLayout() {
     }, [location]);
 
     return (
-        <ReactLenis root options={{ duration: 0.7 }}>
+        <ReactLenis
+            root
+            options={{ duration: 0.7 }}>
             <div className="relative flex flex-col items-center w-full bg-black px-5 md:px-20">
                 <div className="absolute inset-0 mx-auto z-[1] left-[-1px] top-[-1px] w-full h-full site-bg"></div>
                 <AppContextProvider>

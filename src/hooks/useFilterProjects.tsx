@@ -47,9 +47,9 @@ export function useFilterProjects(
         setProjectsToRender(filteredProjects);
     }, [projects, filter]);
 
-    useEffect(()=> {
-        ScrollTrigger.refresh()
-    }, [projectsToRender])
+    useEffect(() => {
+        ScrollTrigger.refresh();
+    }, [projectsToRender]);
 
     return { projectsToRender, filter };
 }
