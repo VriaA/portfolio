@@ -8,8 +8,8 @@ export default function Experience(): JSX.Element {
 
     return (
         <div id="experience" className="relative z-[2] py-10 md:py-20">
-            <section className="bg-metallic-gradient p-[1px] rounded-2xl overflow-hidden">
-                <div className="flex flex-col items-center justify-center bg-black rounded-2xl py-10 md:py-20 px-0 ">
+            <section className="bg-metallic-gradient md:bg-none p-[1px] rounded-2xl overflow-hidden">
+                <div className="flex flex-col items-center justify-center bg-black md:bg-transparent rounded-2xl py-10 md:p-0">
                     <SectionHeader text="Experience" />
                     <div className="max-w-[900px] mt-4 md:mt-10 px-5 md:px-0">
                         {experiences.map((experience, i) => {
