@@ -4,17 +4,15 @@
     font-display: swap;
     font-family: "Brown Sugar";
     font-style: normal;
-    src:
-        url("/brown-sugar.otf") format("opentype"),
+    src: url("/brown-sugar.otf") format("opentype"),
         url("/brown-sugar.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Satoshi-Variable";
-    src:
-        url("../fonts/Satoshi-Variable.woff2") format("woff2"),
-        url("../fonts/Satoshi-Variable.woff") format("woff"),
-        url("../fonts/Satoshi-Variable.ttf") format("truetype");
+    src: url("/Satoshi-Variable.woff2") format("woff2"),
+        url("/Satoshi-Variable.woff") format("woff"),
+        url("/Satoshi-Variable.ttf") format("truetype");
     font-weight: 300 900;
     font-display: swap;
     font-style: normal;
