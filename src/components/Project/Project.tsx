@@ -59,7 +59,7 @@ export default function Project({
                         <h4 className="font-satoshi font-bold text-[28px] xl:text-5xl leading-none -tracking-[.02em]">
                             {name}
                         </h4>
-                        <p className="bg-metallic-text text-transparent bg-clip-text mt-3 font-satoshi font-medium text-sm xl:text-lg leading-[150%] tracking-[.01em]">
+                        <p className="bg-metallic-text text-transparent bg-clip-text mt-3 font-satoshi font-medium text-base xl:text-lg leading-[150%] tracking-[.01em]">
                             {description}
                         </p>
 
@@ -69,7 +69,7 @@ export default function Project({
                                 return (
                                     <p
                                         key={`${name}-${techName}`}
-                                        className="project-stack flex items-center gap-1 w-fit px-2 py-1 xl:px-4 xl:py-2 h-8 xl:h-9 font-satoshi font-medium text-sm xl:text-base tracking-[.01em] bg-metallic-text text-transparent bg-clip-text !leading-none rounded-2xl border bg-dark-gray/20 border-white/30 shadow-container">
+                                        className="project-stack flex items-center gap-1 w-fit px-2 py-1 xl:px-4 xl:py-2 h-8 xl:h-9 font-satoshi font-medium text-base xl:text-base tracking-[.01em] bg-metallic-text text-transparent bg-clip-text !leading-none rounded-2xl border bg-dark-gray/20 border-white/30 shadow-container">
                                         {logo}
                                         {techName}
                                     </p>
