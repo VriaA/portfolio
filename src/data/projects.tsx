@@ -156,7 +156,7 @@ export const projects: Array<ProjectData> = [
         imageSrc: pantryScout,
         links: {
             github: "https://github.com/VriaA/pantry-scout",
-            website: "https://hs-pantry-scout.vercel.app",
+            website: "https://pantry-scout.netlify.app",
         },
         isCompleted: true,
     },
