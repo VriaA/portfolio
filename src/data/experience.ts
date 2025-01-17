@@ -2,7 +2,7 @@ export default [
     {
         role: "Frontend Engineer",
         institution: "Freelance",
-        startDate: "May 2024",
+        startDate: "Mar 2024",
         endDate: "Present",
         description: `Designing and developing custom websites and landing pages for small businesses, non-profits, and start-ups. \n Utilizing modern web technologies and implementing basic SEO best practices.`,
     },
