@@ -69,7 +69,7 @@ export const projects: Array<ProjectData> = [
         imageSrc: supportly,
         links: {
             github: "https://github.com/VriaA/Supportly",
-            website: "https://supportly.vercel.app",
+            website: "https://supportly-ai.netlify.app",
         },
         isCompleted: true,
         isTeam: true,
